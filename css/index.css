@@ -137,6 +137,7 @@ table {
 * {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
 }
 header {
   display: flex;
@@ -146,6 +147,7 @@ header {
   width: 100%;
   background-color: #98A4AF;
   font-size: 1.6rem;
+  z-index: 1;
 }
 header .top-nav {
   display: flex;
@@ -158,17 +160,42 @@ header .top-nav {
   z-index: 10;
 }
 header .open-nav {
+  position: relative;
+  z-index: 10;
   height: 598px;
   width: 100%;
   background-image: url("../img/home/home-jumbotron.png");
 }
+header .open-nav nav {
+  position: relative;
+  z-index: 20;
+}
+header .open-nav nav a {
+  color: #F9FAFA;
+  text-decoration: none;
+  z-index: 30;
+}
+header .open-nav nav a:hover {
+  color: black;
+}
+header .open-nav h1 {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  color: #F9FAFA;
+  font-size: 4rem;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  z-index: 1;
+}
 .show-nav {
+  z-index: 50;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(152, 164, 175, 0.75);
+  background-color: rgba(152, 164, 175, 0.9);
 }
 .hide-nav {
   display: none;

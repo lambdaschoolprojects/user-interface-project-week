@@ -61,6 +61,7 @@ table{
 * {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 header {
@@ -73,6 +74,7 @@ header {
   //padding: 10px 10% 0 10%;
   font-size: 1.6rem;
 
+  z-index: 1;
   img {
 
   }
@@ -90,14 +92,29 @@ header {
 
   .open-nav {
     nav {
+      position: relative;
       a {
         color: #F9FAFA;
         text-decoration: none;
         &:hover {
           color: black;
         }
+        z-index: 30;
       }
+      z-index: 20;
     }
+    h1 {
+      position: absolute;
+      bottom: 100px;
+      left: 100px;
+      color: #F9FAFA;
+      font-size: 4rem;
+      font-family: Roboto, Arial, sans-serif;
+      font-weight: bold;
+      z-index: 1;
+    }
+    position: relative;
+    z-index: 10;
     height: 598px;
     width: 100%;
     background-image: url("../img/home/home-jumbotron.png");
@@ -105,12 +122,13 @@ header {
 }
 
 .show-nav {
+  z-index: 50;
   display: flex;
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba(152, 164, 175, .75);
+  background-color: rgba(152, 164, 175, .9);
 
 }
 
