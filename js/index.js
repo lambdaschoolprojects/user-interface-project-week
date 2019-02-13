@@ -1,5 +1,5 @@
 const hamburgerMenu = document.querySelector(".hamburger");
-const topNav = document.querySelector(".open-nav");
+const topNav = document.querySelector("nav");
 const header = document.querySelector("header");
 
 

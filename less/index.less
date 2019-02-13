@@ -60,10 +60,7 @@ table{
 /* Your Code Goes Here */
 * {
   font-size: 62.5%;
-}
-
-html, body {
-  height: 100%;
+  box-sizing: border-box;
 }
 
 header {
@@ -71,17 +68,24 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
   background-color: #98A4AF;
-  padding: 10px 10%;
+  //padding: 10px 10% 0 10%;
   font-size: 1.6rem;
+
+  img {
+
+  }
 
   .top-nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 10px 10%;
     color: #F9FAFA;
     width: 100%;
-    height: 25px;
+    max-width: 1024px;
+    z-index: 10;
   }
 
   .open-nav {
@@ -89,17 +93,21 @@ header {
       a {
 
       }
-
-      display: flex;
-      flex-direction: column;
     }
-    height: 100%;
+    height: 598px;
+    width: 100%;
+    background-image: url("../img/home/home-jumbotron.png");
   }
 }
 
 .show-nav {
-  height: 100%;
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(152, 164, 175, .75);
+
 }
 
 .hide-nav {
@@ -113,7 +121,6 @@ header {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1024px;
   margin: 0 auto;
-  height: 100%;
 }
