@@ -1,4 +1,4 @@
-@phone: 500px;
+
 
 * {
   font-size: 62.5%;
@@ -41,10 +41,10 @@ header {
         }
         h1 {
             position: absolute;
-            bottom: 100px;
-            left: 100px;
+            bottom: 20%;
+            left: 10%;
             color: #F9FAFA;
-            font-size: 4rem;
+            font-size: 5vw;
             font-family: Roboto, Arial, sans-serif;
             font-weight: bold;
             z-index: 1;
@@ -132,15 +132,43 @@ h2 {
     background-color: white;
     border: 1px solid black;
     font-size: 1.2rem;
+    @media @phone {
+      width: 100%;
+    }
+  }
+
+  @media @phone {
+    .card-mobile;
   }
 }
 .right-card {
   flex-direction: row-reverse;
+  @media @phone {
+    .card-mobile;
+  }
 }
 
 .left-card {
   .intro-text {
     padding: 0 0 0 5%;
+    @media @phone {
+      padding: 0;
+    }
+  }
+}
+
+@media @phone {
+  .intro-text {
+    margin: 0;
+    padding: 0;
+    //height: 200px;
+    line-height: 1.5;
+    p {
+      margin: 20px 0;
+    }
+    h2 {
+      margin-top: 15px;
+    }
   }
 }
 
