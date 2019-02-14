@@ -137,6 +137,8 @@ table {
 * {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+html {
   font-family: Roboto, Arial, sans-serif;
 }
 header {
@@ -213,4 +215,41 @@ header .open-nav h1 {
 .container {
   max-width: 1024px;
   margin: 0 auto;
+}
+.content {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.card .intro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-right: 5%;
+  margin: 30px 0;
+}
+.card .intro-text p {
+  font-size: 1rem;
+}
+.card h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.card button {
+  padding: 10px 15px;
+  width: fit-content;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 1.2rem;
+}
+.right-card {
+  flex-direction: row-reverse;
+}
+.left-card .intro-text {
+  padding: 0 0 0 5%;
 }
