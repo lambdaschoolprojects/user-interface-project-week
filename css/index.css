@@ -190,6 +190,10 @@ header .open-nav h1 {
   font-weight: bold;
   z-index: 1;
 }
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 .show-nav {
   z-index: 50;
   display: flex;
@@ -236,10 +240,6 @@ header .open-nav h1 {
 .card .intro-text p {
   font-size: 1rem;
 }
-.card h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
 .card button {
   padding: 10px 15px;
   width: fit-content;
@@ -252,4 +252,28 @@ header .open-nav h1 {
 }
 .left-card .intro-text {
   padding: 0 0 0 5%;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+.project-card p {
+  margin: 10px 25%;
+  font-size: 1.2rem;
+}
+.project-card header {
+  background-color: white;
+  margin: 15px 0;
+}
+.project-card h3 {
+  width: fit-content;
+  background-color: #D8D8D8;
+  padding: 30px 8%;
+  margin-top: -40px;
+  align-self: flex-end;
+  border: 1px inset white;
+  letter-spacing: 3px;
+}
+.project-card:nth-child(even) h3 {
+  align-self: start;
 }
