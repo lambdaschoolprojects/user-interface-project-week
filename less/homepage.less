@@ -20,9 +20,6 @@ header {
   font-size: 1.6rem;
 
   z-index: 1;
-  img {
-
-  }
 
   .top-nav {
     display: flex;
@@ -35,53 +32,24 @@ header {
     z-index: 10;
   }
 
-  .open-nav {
-    nav {
+  .nav-links {
       position: relative;
-      height: 100%;
-      a {
-        color: #F9FAFA;
-        text-decoration: none;
-        &:hover {
-          color: black;
-        }
-        z-index: 30;
+      .nav-container {
+          position: relative;
+            h1 {
+                position: absolute;
+                bottom: 100px;
+                left: 100px;
+                color: #F9FAFA;
+                font-size: 4rem;
+                font-family: Roboto, Arial, sans-serif;
+                font-weight: bold;
+                z-index: 1;
+            }
       }
-      z-index: 20;
-    }
-    h1 {
-      position: absolute;
-      bottom: 100px;
-      left: 100px;
-      color: #F9FAFA;
-      font-size: 4rem;
-      font-family: Roboto, Arial, sans-serif;
-      font-weight: bold;
-      z-index: 1;
-    }
-    .view-nav {
-      position: absolute;
-    }
-    position: relative;
-    z-index: 10;
-    height: 0;
-    width: 100%;
-    background-size: auto 100%;
-    background-image: url("../img/home/home-jumbotron.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    padding-top: 58.4%;
-    @media(max-width: @phone) {
-      height: 200px;
-      h1 {
-        font-size: 2rem;
-        left: 15px;
-        bottom: 15px;
-      }
-    }
   }
 }
+
 
 h2 {
   font-size: 1.6rem;
