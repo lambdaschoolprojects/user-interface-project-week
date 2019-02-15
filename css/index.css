@@ -1,8 +1,13 @@
+/* Your Code Goes Here */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 /*------------------------------------*\
 RESET
 \*------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-v2.0b1 | 201101 
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 html,
@@ -132,11 +137,6 @@ del {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-/* Your Code Goes Here */
-* {
-  font-size: 62.5%;
-  box-sizing: border-box;
 }
 .hamburger {
   background-image: url("../img/nav-hamburger.png");
@@ -456,5 +456,6 @@ h2 {
   justify-content: space-around;
 }
 .cards-container .tab-text p {
-  margin: 5px 10% 5px 0;
+  margin: 5px 10% 0 0;
+  line-height: 1.4;
 }
