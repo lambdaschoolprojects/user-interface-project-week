@@ -138,8 +138,15 @@ table {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-html {
-  font-family: Roboto, Arial, sans-serif;
+.hamburger {
+  background-image: url("../img/nav-hamburger.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 21px;
+}
+.close-burger {
+  background-image: url("../img/nav-hamburger-close.png");
 }
 header {
   display: flex;
@@ -213,19 +220,16 @@ header .nav-links .nav-container a {
 header .nav-links .nav-container a:hover {
   color: #222222;
 }
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
 h2 {
   font-size: 1.6rem;
   font-weight: bold;
-}
-.hamburger {
-  background-image: url("../img/nav-hamburger.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 32px;
-  height: 21px;
-}
-.close-burger {
-  background-image: url("../img/nav-hamburger-close.png");
 }
 .container {
   max-width: 1024px;
