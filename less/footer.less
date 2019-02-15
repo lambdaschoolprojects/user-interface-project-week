@@ -1,0 +1,49 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #828282;
+  color: white;
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 10%;
+    @media @phone {
+      .flex(column);
+    }
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bolder;
+      @media @phone {
+        margin-top: 25px;
+      }
+    }
+    p {
+      margin: 8px 0;
+      font-size: .9rem;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    .contact {
+      p {
+        font-size: 0.8rem;
+      }
+      input {
+        width: 100%;
+        height: 33px;
+        border-radius: 5px;
+        margin: 8px 0;
+        color: #98A4AF;
+        padding: 5px;
+        font-size: 0.8rem;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+}
