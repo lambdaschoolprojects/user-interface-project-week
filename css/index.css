@@ -450,3 +450,11 @@ h2 {
 .cards-container .active-card {
   display: flex;
 }
+.cards-container .tab-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cards-container .tab-text p {
+  margin: 5px 10% 5px 0;
+}
