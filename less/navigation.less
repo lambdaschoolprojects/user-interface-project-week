@@ -10,80 +10,72 @@
   background-image: url("../img/nav-hamburger-close.png");
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
+.nav-links, .top-menu {
+  position: relative;
   background-color: #98A4AF;
-  //padding: 10px 10% 0 10%;
+  margin: 0 auto;
+  top: 0;
+  height: 50px;
+  display: flex;
+  max-width: 1024px;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 10%;
+  color: #F9FAFA;
+  width: 100%;
+  //max-width: 1024px;
+  z-index: 75;
   font-size: 1.6rem;
+}
 
-  z-index: 1;
-
-  .top-nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px 10%;
-    color: #F9FAFA;
+.nav-container {
+  position: fixed;
+  //max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  top: 0;
+  z-index: 25;
+  .top-menu {
     width: 100%;
+    display: flex;
+    height: 50px;
+    z-index: 25;
+    justify-content: space-between;
+  }
+  //LEFT: 0;
+  .hide-nav {
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+  }
+  .nav-link-holder {
     max-width: 1024px;
-    z-index: 10;
+    margin: 0 auto;
+    position: relative;
+    background-color: #828282;
   }
 
-  .nav-links {
-    position: relative;
-    background-color: white;
-    .nav-container {
-      position: relative;
-      img {
-        width: 100%;
-      }
-      h1 {
-        position: absolute;
-        bottom: 20%;
-        left: 10%;
-        color: #F9FAFA;
-        font-size: 5vw;
-        font-family: Roboto, Arial, sans-serif;
-        font-weight: bold;
-        z-index: 1;
-        @media @phone {
-          font-size: 8vw;
-          line-height: 1.4;
-          letter-spacing: 1.2px;
-        }
-      }
-      .hide-nav {
-        position: absolute;
-        display: none;
-        height: 100%;
-        width: 100%;
-      }
+  .show-nav {
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(152, 164, 175, .9);
 
-      .show-nav {
-        z-index: 50;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-        background-color: rgba(152, 164, 175, .9);
-
-      }
-      a {
-        color: white;
-        text-decoration: none;
-        &:hover {
-          color: #222222;
-        }
-      }
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: #222222;
     }
+    z-index: 65;
   }
 }

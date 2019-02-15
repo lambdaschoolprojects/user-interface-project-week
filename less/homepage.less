@@ -98,37 +98,40 @@ h2 {
       margin: 10px 3%;
     }
   }
-  header {
+  .project-header {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     margin: 15px 0;
-
-  }
-  h3 {
-    width: fit-content;
-    background-color: #D8D8D8;
-    padding: 30px 8%;
-    margin-top: -40px;
-    margin-right: -4px;
-    align-self: flex-end;
-    border: 1px outset white;
-    letter-spacing: 3px;
-    @media @phone {
-      align-self: center;
-      width: 90%;
-      text-align: center;
+    img {
+      //z-index: -1;
+      width: 100%;
+    }
+    h3 {
+      position: relative;
+      width: fit-content;
+      background-color: #D8D8D8;
+      padding: 30px 8%;
+      margin-top: -40px;
+      margin-right: -4px;
+      align-self: flex-end;
+      border: 1px outset white;
+      letter-spacing: 3px;
+      z-index: 10;
+      @media @phone {
+        align-self: center;
+        width: 90%;
+        text-align: center;
+      }
     }
   }
-}
 
-.card-left {
-  h3 {
-    align-self: start;
-    margin-right: 0;
-    margin-left: -4px;
-    @media @phone {
-      align-self: center;
+  .card-left {
+    h3 {
+      align-self: flex-start;
     }
   }
+
 }
 
 
@@ -140,4 +143,3 @@ h2 {
     }
   }
 }
-
