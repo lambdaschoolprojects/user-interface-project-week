@@ -170,6 +170,7 @@ header .top-nav {
 }
 header .nav-links {
   position: relative;
+  background-color: white;
 }
 header .nav-links .nav-container {
   position: relative;
@@ -413,4 +414,36 @@ footer .copyright {
   text-align: center;
   font-size: 0.8rem;
   margin-bottom: 15px;
+}
+.service-intro p {
+  margin: 40px 8%;
+  line-height: 1.5;
+}
+.tabs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabs .tab {
+  position: relative;
+  border: 2px solid black;
+  padding: 1.5% 2.5%;
+  font-size: 1.2vw;
+  font-weight: bolder;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.tabs .tab:hover {
+  background-color: #222;
+  color: #FFF;
+}
+.tabs .active-tab {
+  background-color: #5E9FB9;
+}
+.cards-container .card {
+  display: none;
+}
+.cards-container .active-card {
+  display: flex;
 }
