@@ -1,96 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="./js/index.js" async></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 
 <body>
+<div class="nav-container">
+    <div class="nav-link-holder">
+        <div class="top-menu">
+            <div class="nav-logo">S&J</div>
+            <div class="hamburger"></div>
+        </div>
+        <nav class="nav-links hide-nav">
+            <a href="index.html" class="navigation">Home</a>
+            <a href="services.html" class="navigation">Services</a>
+            <a href="#" class="navigation">Contact</a>
+        </nav>
+    </div>
+</div>
 
-	<h1>You got this!  Good luck.</h1>
+<div class="container">
+    <div class="jumbo-container">
+        <img src="./img/home/home-jumbotron.png"/>
+        <h1>
+            Integrity, <br/>
+            Excellence, <br/>
+            Progress.
+        </h1>
+    </div>
 
-<!-- Menu Content 
-S&J
 
-Home
-Services
-Contact
--->
+    <section class="content">
+        <section class="intro">
+            <section class="card right-card">
+                <img src="./img/home/home-img-1.png"
+                     alt="A close up detail of a blueprint with a pen and a ruler on top"/>
+                <div class="intro-text">
+                    <h2>Smith & Jones Architects</h2>
+                    <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam
+                        vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem</p>
+                    <button id="learn-more">Learn More</button>
+                </div>
+            </section>
+            <section class="card left-card">
+                <img src="./img/home/home-img-2.png"
+                     alt="An architectural detail of an outdoor courtyard and a blue sky."/>
+                <div class="intro-text">
+                    <h2>Futuristic Designs</h2>
+                    <p>Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam
+                        vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem
+                    </p>
+                    <button id="view-designs">View Designs</button>
+                </div>
+            </section>
+        </section>
+        <section class="project-section">
+            <h2>Recent Projects</h2>
+            <section class="project-card">
+                <div class="project-header">
+                    <img src="./img/home/home-villas-img.png"
+                         alt="The top floor of a luxury condo feature modern architectural flourishes.">
+                    <h3>THE VILLAS</h3>
+                </div>
 
+                <p>
+                    The Villas bring to the table win-win survival strategies to ensure proactive domination. At the
+                    end of the day, going forward, a new normal that has evolved from generation X is on the runway
+                    heading towards a streamlined cloud solution.
+                </p>
+                <p>
+                    Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                    Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
+                    along the information highway will close the loop on focusing solely on the bottom line.
+                </p>
+            </section>
+            <section class="project-card">
+                <div class="project-header card-left">
+                    <img src="./img/home/home-outskirts-img.png"
+                         alt="A waterfront condo sitting directly on the waterline.">
+                    <h3>OUTSKIRTS</h3>
+                </div>
+                <p>
+                    The Outskirts are amazing to the table win-win survival strategies to ensure proactive
+                    domination. At the end of the day, going forward, a new normal that has evolved from
+                    generation X is on the runway heading towards a streamlined cloud solution.
+                </p>
+                <p>
+                    Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                    Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
+                    along the information highway will close the loop on focusing solely on the bottom line.
+                </p>
+            </section>
+            <section class="project-card">
+                <div class="project-header">
+                    <img src="./img/home/home-the-blocks-img.png"
+                         alt="A street block flanked by colorful townhouses.">
+                    <h3>THE BLOCKS</h3>
+                </div>
 
-<!-- Home Page Content:
-	
-Integrity,
-Excellence,
-Progress.
+                <p>
+                    The Blocks are amazing to the table win-win survival strategies to ensure proactive domination.
+                    At the end of the day, going forward, a new normal that has evolved from generation X is on the
+                    runway heading towards a streamlined cloud solution.
+                </p>
 
-Smith & Jones Architects
+                <p>
+                    Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
+                    Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion
+                    along the information highway will close the loop on focusing solely on the bottom line.
+                </p>
+            </section>
+        </section>
+    </section>
 
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
+    <footer>
+        <section class="footer-content">
+            <section class="contact">
+                <h3>Interested in starting a project?</h3>
+                <h3>Let’s talk:</h3>
 
-Learn More
+                <input type="email" name="email" value="Enter email">
 
-Futuristic Designs
+                <p>We'll never share your email with anyone else.</p>
+            </section>
+            <address>
+                <h3>New York</h3>
+                <p>123 Lane</p>
+                <p>Suite 100</p>
+                <p>Albany, NY 12345</p>
+                <a href="tel:202-555-0144">202 555 0144</a>
+            </address>
+            <address>
+                <h3>Florida</h3>
+                <p>Ocean Drive</p>
+                <p>Suite 201</p>
+                <p>Orlando, FL 22345</p>
+                <a href="tel:502-555-0144">502 555 0144</a>
+            </address>
 
-Et sed autem causae appareat, tempor abhorreant te mei, facer facilisis sit ea. Eu timeam vidisse consectetuer sed. Duo etiam laboramus dissentiet in, nec no errem 
-
-View Designs
-
-Recent Projects
-
-THE VILLAS
-
-The Villas bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-OUTSKIRTS
-
-The Outskirts are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
-THE BLOCKS
-
-The Blocks are amazing to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
-
--->
-
-<!-- FOOTER CONTENT
-Interested in starting a project?  
-Let’s talk:
-
-Enter email
-
-We'll never share your email with anyone else.
-
-New York
-123 Lane
-Suite 100
-Albany, NY 12345
-202 555 0144
-
-Florida
-Ocean Drive
-Suite 201
-Orlando, FL 22345
-502 555 0144
-
-California
-Mountain Street
-Suite 105
-San Diego, CA 22345
-702 555 0144
-
-Copyright © 2018 Smith and Jones
--->
-	<script src="js/index.js"></script>
+            <address>
+                <h3>California</h3>
+                <p>Mountain Street</p>
+                <p>Suite 105</p>
+                <p>San Diego, CA 22345</p>
+                <a href="tel:702-555-0144">702 555 0144</a>
+            </address>
+        </section>
+        <div class="copyright">Copyright © 2018 Smith and Jones</div>
+    </footer>
+</div>
+a
 </body>
 </html>

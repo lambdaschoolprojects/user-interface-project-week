@@ -1,0 +1,145 @@
+
+
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 75px 0;
+  .intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-right: 5%;
+    margin: 30px 0;
+    p {
+      font-size: 1.0rem;
+    }
+  }
+  button {
+    padding: 10px 15px;
+    width: fit-content;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    @media @phone {
+      width: 100%;
+    }
+  }
+
+  @media @phone {
+    .card-mobile;
+  }
+}
+.right-card {
+  flex-direction: row-reverse;
+  @media @phone {
+    .card-mobile;
+  }
+}
+
+.left-card {
+  .intro-text {
+    padding: 0 0 0 5%;
+    @media @phone {
+      padding: 0;
+    }
+  }
+}
+
+@media @phone {
+  .intro-text {
+    margin: 0;
+    padding: 0;
+    //height: 200px;
+    line-height: 1.5;
+    p {
+      margin: 20px 0;
+    }
+    h2 {
+      margin-top: 15px;
+    }
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 75px;
+  p {
+    margin: 10px 25%;
+    line-height: 1.2;
+    font-size: 1.2rem;
+    @media @phone {
+      margin: 10px 3%;
+    }
+  }
+  .project-header {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 15px 0;
+    img {
+      //z-index: -1;
+      width: 100%;
+    }
+    h3 {
+      position: relative;
+      width: fit-content;
+      background-color: #D8D8D8;
+      padding: 30px 8%;
+      margin-top: -40px;
+      margin-right: -4px;
+      align-self: flex-end;
+      border: 1px outset white;
+      letter-spacing: 3px;
+      z-index: 10;
+      @media @phone {
+        align-self: center;
+        width: 90%;
+        text-align: center;
+      }
+    }
+  }
+
+  .card-left {
+    h3 {
+      align-self: flex-start;
+    }
+  }
+
+}
+
+
+
+.project-section {
+  @media @phone {
+    h2 {
+      margin: 20px 0 15px 0;
+    }
+  }
+}
